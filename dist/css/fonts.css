@@ -1,0 +1,46 @@
+/*
+	This font software is the property of Commercial Type.
+
+	You may not modify the font software, use it on another website, or install it on a computer.
+
+	License information is available at http://commercialtype.com/eula
+	For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+	Copyright (C) 2016 Schwartzco Inc.
+	1806-WNEZGG
+*/
+
+
+.reMarkablePortrait-Medium-Web {
+    font-family: "reMarkable Portrait Web";
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.reMarkablePortrait-MediumItalic-Web {
+    font-family: "reMarkable Portrait Web";
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+	font-family: "reMarkable Portrait Web";
+	src: url("reMarkablePortrait-Medium-Web.eot");
+		src: url("reMarkablePortrait-Medium-Web.eot?#iefix") format("embedded-opentype"),
+		     url("reMarkablePortrait-Medium-Web.woff2") format("woff2"),
+		     url("reMarkablePortrait-Medium-Web.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: "reMarkable Portrait Web";
+	src: url("reMarkablePortrait-MediumItalic-Web.eot");
+		src: url("reMarkablePortrait-MediumItalic-Web.eot?#iefix") format("embedded-opentype"),
+		     url("reMarkablePortrait-MediumItalic-Web.woff2") format("woff2"),
+		     url("reMarkablePortrait-MediumItalic-Web.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
+	}

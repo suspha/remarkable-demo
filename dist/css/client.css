@@ -1,0 +1,84 @@
+.client-reviews {
+  background: var(--master-brown-5)
+}
+
+.clients {
+  position: relative;
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  bottom: 3rem
+}
+
+.client-quote {
+  padding-bottom: 1rem
+}
+
+img {
+  border-bottom: 2px solid transparent
+}
+
+.icon-light,
+a:hover .icon-dark {
+  display: block;
+}
+
+.icon-dark,
+a:hover .icon-light {
+  display: none;
+}
+
+.client-icon {
+  background-size: 100%;
+  width: 9.35rem;
+  height: 3.375rem;
+  padding-bottom: 8px;
+  vertical-align: bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-bottom: 2px solid transparent
+}
+
+.client-icon:hover {
+  border-bottom: 2px solid var(--master-cta)
+}
+
+.client-icon.icon1 {
+  background-image: url(/img/TechCrunch_logo_light.svg);
+}
+
+.client-icon.icon1:hover {
+  background-image: url(/img/TechCrunch_logo_dark.svg);
+}
+
+.client-icon.icon2 {
+  background-image: url(/img/TrustedReviews_horizontal_logo_light.svg);
+}
+
+.client-icon.icon2:hover {
+  background-image: url(/img/TrustedReviews_horizontal_logo_dark.svg);
+}
+
+.client-icon.icon3 {
+  background-image: url(/img/Engadget_logo_light.svg);
+}
+
+.client-icon.icon3:hover {
+  background-image: url(/img/Engadget_logo_dark.svg);
+}
+
+.client-icon.icon4 {
+  background-image: url(/img/TheVerge_logo_light.svg);
+}
+
+.client-icon.icon4:hover {
+  background-image: url(/img/TheVerge_logo_dark.svg);
+}
+
+.client-icon.icon5 {
+  background-image: url(/img/Mashable_logo_light.svg);
+}
+
+.client-icon.icon5:hover {
+  background-image: url(/img/Mashable_logo_dark.svg);
+}

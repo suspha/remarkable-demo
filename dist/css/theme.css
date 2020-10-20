@@ -1,0 +1,182 @@
+:root {
+
+/* Colors: */
+--master-brown-5: #E9E8E6;
+--master-gray-2: #222222;
+--master-green-2: #4A5B5E;
+--master-gray-7: #EFEFEF;
+--master-gray-1: #111111;
+--master-gray-4: #9B9B9B;
+--master-green-3: #899694;
+--master-green-1: #243539;
+--master-cta: #CB7428;
+--master-cta-hover: #C15F07;
+--master-gray-3: #646464;
+--master-gray-5: #D1D1D1;
+--master-gray-6: #E2E2E2;
+--master-blue-1: #0B212E;
+--master-blue-2: #4E5E67;
+--master-blue-3: #7A8991;
+--master-blue-4: #A1ADB5;
+--master-blue-5: #D4DADD;
+--master-green-4: #ACB7B4;
+--master-green-5: #E2E5E4;
+--master-brown-1: #684535;
+--master-brown-2: #91766A;
+--master-brown-3: #B5A095;
+--master-brown-4: #D1C1B4;
+--master-status-positive: #009245;
+--master-status-neutral: #F7931E;
+--master-status-negative: #ED1B23;
+--master-cta-selected: #FBF1E8;
+
+/* Font/text values */
+--unnamed-font-family-remarkable-portrait: reMarkable Portrait;
+--unnamed-font-family-maison-neue: Maison Neue;
+--unnamed-font-style-normal: normal;
+--unnamed-font-style-italic: italic;
+--unnamed-font-weight-medium: medium;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-12: 12px;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-18: 18px;
+--unnamed-font-size-24: 24px;
+--unnamed-font-size-30: 30px;
+--unnamed-font-size-50: 50px;
+--unnamed-font-size-70: 70px;
+--unnamed-font-size-90: 90px;
+--unnamed-font-size-110: 110px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-character-spacing-0-36: 0.36px;
+--unnamed-character-spacing-0-09: 0.09px;
+--unnamed-line-spacing-16: 16px;
+--unnamed-line-spacing-24: 24px;
+--unnamed-line-spacing-30: 30px;
+--unnamed-line-spacing-35: 35px;
+--unnamed-line-spacing-55: 55px;
+--unnamed-line-spacing-75: 75px;
+--unnamed-line-spacing-95: 95px;
+--unnamed-line-spacing-120: 120px;
+--unnamed-text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.master-header-30 {
+font-family: var(--unnamed-font-family-remarkable-portrait);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-30);
+line-height: var(--unnamed-line-spacing-35);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-header-50 {
+font-family: var(--unnamed-font-family-remarkable-portrait);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-50);
+line-height: var(--unnamed-line-spacing-55);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-header-70 {
+font-family: var(--unnamed-font-family-remarkable-portrait);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-70);
+line-height: var(--unnamed-line-spacing-75);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-header-90 {
+font-family: var(--unnamed-font-family-remarkable-portrait);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-90);
+line-height: var(--unnamed-line-spacing-95);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-header-110 {
+font-family: var(--unnamed-font-family-remarkable-portrait);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-110);
+line-height: var(--unnamed-line-spacing-120);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-header-30-italic {
+font-family: var(--unnamed-font-family-remarkable-portrait);
+font-style: var(--unnamed-font-style-italic);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-30);
+line-height: var(--unnamed-line-spacing-35);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-infotext-all-caps-12px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-12);
+line-height: var(--unnamed-line-spacing-16);
+letter-spacing: var(--unnamed-character-spacing-0-36);
+color: var(--unnamed-color-222222);
+text-transform: var(--unnamed-text-transform-uppercase);
+}
+.master-body-2-16px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-body-1-18px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-leading-paragraph-24px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-30);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-body-2-bold-16px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-body-1-bold-18px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-222222);
+}
+.master-button-text-18px {
+font-family: var(--unnamed-font-family-maison-neue);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0-09);
+color: var(--unnamed-color-222222);
+}
