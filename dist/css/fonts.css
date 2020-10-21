@@ -27,20 +27,20 @@
 
 @font-face {
 	font-family: "reMarkable Portrait Web";
-	src: url("reMarkablePortrait-Medium-Web.eot");
-		src: url("reMarkablePortrait-Medium-Web.eot?#iefix") format("embedded-opentype"),
-		     url("reMarkablePortrait-Medium-Web.woff2") format("woff2"),
-		     url("reMarkablePortrait-Medium-Web.woff") format("woff");
+	src: url("fonts/reMarkablePortrait-Medium-Web.eot");
+		src: url("fonts/reMarkablePortrait-Medium-Web.eot?#iefix") format("embedded-opentype"),
+		     url("fonts/reMarkablePortrait-Medium-Web.woff2") format("woff2"),
+		     url("fonts/reMarkablePortrait-Medium-Web.woff") format("woff");
 	font-weight: 600;
 	font-style: normal;
 	}
 
 @font-face {
 	font-family: "reMarkable Portrait Web";
-	src: url("reMarkablePortrait-MediumItalic-Web.eot");
-		src: url("reMarkablePortrait-MediumItalic-Web.eot?#iefix") format("embedded-opentype"),
-		     url("reMarkablePortrait-MediumItalic-Web.woff2") format("woff2"),
-		     url("reMarkablePortrait-MediumItalic-Web.woff") format("woff");
+	src: url("fonts/reMarkablePortrait-MediumItalic-Web.eot");
+		src: url("fonts/reMarkablePortrait-MediumItalic-Web.eot?#iefix") format("embedded-opentype"),
+		     url("fonts/reMarkablePortrait-MediumItalic-Web.woff2") format("woff2"),
+		     url("fonts/reMarkablePortrait-MediumItalic-Web.woff") format("woff");
 	font-weight: 600;
 	font-style: italic;
 	}

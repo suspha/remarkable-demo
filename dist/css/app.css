@@ -16,6 +16,7 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 .remarkable-logo-dark {
@@ -75,14 +76,9 @@ body {
   justify-content: center;
 
 }
-.api-playground {
-  height: 37.5rem;
-  background: white;
-}
 
 /* Footer */
 footer {
-  height: 21.875rem;
   background: var(--master-gray-2)
 }
 
@@ -130,10 +126,15 @@ li a {
   transition: all .2s ease-in-out
 }
 
+
 @media only screen and (max-width: 37.5rem) {
+  .client-reviews {
+    padding-top: 8rem;
+  }
   .footer-wrapper .row {
     display: block;
     margin: 0 2rem;
+    width: 100%
   }
   .footer-wrapper .column  {
     display: block
@@ -149,8 +150,7 @@ li a {
   }
   .title {
     margin: 0 5px;
-    width: auto;
-    width: 100%
+    width: 60%;
   }
   .remarkable-brand {
     position: relative;
@@ -158,15 +158,3 @@ li a {
   }
 }
 
-.spinner {
-  display: inline-block;
-  opacity: 0;
-  background-image: url(/img/spinner.svg);
-  height: 25px;
-  width: 25px;
-  background-position: center center;
-  background-size: contain;
-  position: relative;
-  top: 5px;
-  transition: opacity 0.2s ease;
-}

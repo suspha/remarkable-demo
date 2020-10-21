@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="/css/theme.css">
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/client.css">
+  <link rel="stylesheet" href="/css/slideshow.css">
+  <link rel="stylesheet" href="/css/api.css">
   <link rel="stylesheet" href="/css/slick.css">
   <link rel="stylesheet" href="/css/slick-theme.css">
 </head>
@@ -28,7 +30,31 @@
     </div>
     <div class="grey-background"></div>
     <div class="client-reviews">
-      <div class="clients">
+      <div class="clients icon1" style="display: none;">
+        <div class="client-quote master-header-30-italic">
+          <cite><q>TechCrunch tekst her.</q></cite>
+        </div>
+        <div class="client-name master-body-2-16px">
+          <p>Name, TechCrunch</p>
+        </div>
+      </div>
+      <div class="clients icon2" style="display: none;">
+        <div class="client-quote master-header-30-italic">
+          <cite><q>Trusted tekst her.</q></cite>
+        </div>
+        <div class="client-name master-body-2-16px">
+          <p>Name, Trusted reviews</p>
+        </div>
+      </div>
+      <div class="clients icon3" style="display: none;">
+        <div class="client-quote master-header-30-italic">
+          <cite><q>Engadget tekst her.</q></cite>
+        </div>
+        <div class="client-name master-body-2-16px">
+          <p>Name, Engadget</p>
+        </div>
+      </div>
+      <div class="clients icon4">
         <div class="client-quote master-header-30-italic">
           <cite><q>Where the reMarkable 2 stands out is the “paper-like” design.</q></cite>
         </div>
@@ -36,9 +62,18 @@
           <p>Chaim Gartenberg, The Verge</p>
         </div>
       </div>
+      <div class="clients icon5" style="display: none;">
+        <div class="client-quote master-header-30-italic">
+          <cite><q>Mashable tekst her.</q></cite>
+        </div>
+        <div class="client-name master-body-2-16px">
+          <p>Name, Mashable</p>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
           <a class="client-icon icon1" href="#"></a>
+          <img class="" src="/img/Engadget_logo_dark2.svg" alt="icon" class="icon" style="border-bottom:1px solid grey;height: 50px">
         </div>
         <div class="col">
           <a class="client-icon icon2" href="#"></a>
@@ -59,20 +94,25 @@
   <div class="slideshow">
     <h1 class="master-header-50 header light">Videoreviews</h1>
     <div class="slider">
-      <div>
-        <img class="slide-header client-icon icon1">
-      </div>
-      <div>
+      <div class="slide-item">
         <img class="slide-header" src="/img/TechCrunch_logo_light.svg" alt="icon" class="icon">
+        <div class="slide-video"></div>
       </div>
-      <div>
-        <img class="slide-header" src="/img/TechCrunch_logo_light.svg" alt="icon" class="icon">
+      <div class="slide-item">
+        <img class="slide-header" src="/img/TrustedReviews_horizontal_logo_light.svg" alt="icon" class="icon">
+        <div class="slide-video"></div>
       </div>
-      <div>
-        <img class="slide-header" src="/img/TechCrunch_logo_light.svg" alt="icon" class="icon">
+      <div class="slide-item">
+        <img class="slide-header" src="/img/Engadget_logo_light.svg" alt="icon" class="icon">
+        <div class="slide-video"></div>
       </div>
-      <div>
-        <img class="slide-header" src="/img/TechCrunch_logo_light.svg" alt="icon" class="icon">
+      <div class="slide-item">
+        <img class="slide-header" src="/img/TheVerge_logo_light.svg" alt="icon" class="icon">
+        <div class="slide-video"></div>
+      </div>
+      <div class="slide-item">
+        <img class="slide-header" src="/img/Mashable_logo_light.svg" alt="icon" class="icon">
+        <div class="slide-video"></div>
       </div>
     </div>
   </div>
@@ -80,6 +120,16 @@
   <section>
     <div class="api-playground">
       <h1 class="master-header-50 header dark">API playground</h1>
+      <h2>Check if Remarkable is available in your country</h2>
+      <div class="search" style="margin:auto;max-width:350px">
+        <form autocomplete="off" method="post" action="">
+          <input type="text" placeholder="Search.." name="search" aria-label='Enter search text'>
+          <button aria-label="Submit" type="submit">Search</button>
+        </form>
+      </div>
+      <div id="countries">
+        <div class="spinner"><img src="/img/spinner.svg"></div>
+      </div>
     </div>
   </section>
 
@@ -111,6 +161,9 @@
   <script src="/js/app.js"></script>
   <script>
     loadSlider()
+  </script>
+  <script>
+    loadApi()
   </script>
 </body>
 </html>
