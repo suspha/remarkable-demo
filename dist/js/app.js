@@ -29,6 +29,24 @@ function loadApi(fn) {
   })
 }
 
+function setText(a) {
+  var name = a.getAttribute('data-name')
+  var clients = document.querySelectorAll('.clients')
+  clients.forEach(function(el) {
+    if (el.classList.contains(name)) {
+      el.style.display = 'block'
+    } else {
+      el.style.display = 'none'
+    }
+  })
+
+  var icons = document.querySelectorAll('.client-icon')
+  icons.forEach(function(el) {
+    el.classList.remove('active')
+  })
+  a.classList.add('active')
+}
+
 function loadSlider() {
   $('.slider').slick({
     centerMode: true,

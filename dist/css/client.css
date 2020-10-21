@@ -47,6 +47,7 @@ a:hover .icon-light {
   background-image: url(/img/TechCrunch_logo_light.svg);
 }
 
+.client-icon.icon1.active,
 .client-icon.icon1:hover {
   background-image: url(/img/TechCrunch_logo_dark.svg);
 }
@@ -55,6 +56,7 @@ a:hover .icon-light {
   background-image: url(/img/TrustedReviews_horizontal_logo_light.svg);
 }
 
+.client-icon.icon2.active,
 .client-icon.icon2:hover {
   background-image: url(/img/TrustedReviews_horizontal_logo_dark.svg);
 }
@@ -63,6 +65,7 @@ a:hover .icon-light {
   background-image: url(/img/Engadget_logo_light.svg);
 }
 
+.client-icon.icon3.active,
 .client-icon.icon3:hover {
   background-image: url(/img/Engadget_logo_dark.svg);
 }
@@ -71,6 +74,7 @@ a:hover .icon-light {
   background-image: url(/img/TheVerge_logo_light.svg);
 }
 
+.client-icon.icon4.active,
 .client-icon.icon4:hover {
   background-image: url(/img/TheVerge_logo_dark.svg);
 }
@@ -79,6 +83,7 @@ a:hover .icon-light {
   background-image: url(/img/Mashable_logo_light.svg);
 }
 
+.client-icon.icon5.active,
 .client-icon.icon5:hover {
   background-image: url(/img/Mashable_logo_dark.svg);
 }
