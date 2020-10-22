@@ -5,40 +5,24 @@
   text-align: center;
 }
 
+.api-playground h2 {
+  margin: 1rem 0;
+}
+
 #countries, div{
   padding: 5px 0;
   font-size: 1.125rem;
 }
 
-.search {
-  padding: 1rem 0;
-}
-
-.search input[type=text] {
-  padding: 12px 20px;
+.api-playground select {
+  padding: 8px 10px;
+  width: 300px;
   border: 2px solid var(--master-cta);
-  float: left;
-  width: 75%;
-  background: #fff;
   border-radius: 20px;
 }
 
-.search button {
-  padding: 12px 20px;
-  background: var(--master-green-1);
-  color: white;
-  border-radius: 20px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-}
-
-.search button:hover {
-  background: var(--master-green-2);
-}
-
-.search::after {
-  content: "";
-  clear: both;
-  display: table;
+@media only screen and (max-width: 600px) {
+  .api-playground  {
+    margin: 0 1rem;
+  }
 }

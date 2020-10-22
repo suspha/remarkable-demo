@@ -24,22 +24,15 @@
   width: 100%
 }
 
+img.slide-header {
+  height: 30px;
+  padding-bottom: 7px;
+}
+
 .slide-video {
   height: 176px;
   background: var(--master-gray-4);
   margin-top: 1.5rem
-}
-
-video {
-  margin-top: 1.5rem
-}
-
-.slide:active .slide-header {
-  border-bottom: 1px solid black
-}
-
-.slide:active .slide-video {
-  background: black
 }
 
 .slick-center{
@@ -47,7 +40,7 @@ video {
 }
 
 
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 600px) {
   .slick-slide {
     width: 250px;
   }

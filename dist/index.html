@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="/css/slick-theme.css">
 </head>
 <body>
+
   <!--TOP-->
   <section>
     <div class="landing-top">
@@ -28,6 +30,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Client -->
     <div class="grey-background"></div>
     <div class="client-reviews">
       <div class="clients icon1" style="display: none;">
@@ -56,7 +60,7 @@
       </div>
       <div class="clients icon4">
         <div class="client-quote master-header-30-italic">
-          <cite><q>Where the reMarkable 2 stands out is the “paper-like” design.</q></cite>
+          <cite><q>Where the reMarkable 2 stands out is the &quot;paper-like&quot; design.</q></cite>
         </div>
         <div class="client-name master-body-2-16px">
           <p>Chaim Gartenberg, The Verge</p>
@@ -70,65 +74,65 @@
           <p>Name, Mashable</p>
         </div>
       </div>
-      <div class="row">
+      <div class="client-icons row">
         <div class="col">
-          <a class="client-icon icon1" href="#" onclick="setText(this)" onmouseover="setText(this)" data-name="icon1"></a>
-          <!-- <img class="" src="/img/Engadget_logo_dark2.svg" alt="icon" class="icon" style="border-bottom:1px solid grey;height: 50px"> -->
+          <a class="client-icon icon1" href="#" onclick="setText(this);return false" onmouseover="setText(this)" data-name="icon1"></a>
         </div>
         <div class="col">
-          <a class="client-icon icon2" href="#" onclick="setText(this)" onmouseover="setText(this)" data-name="icon2"></a>
+          <a class="client-icon icon2" href="#" onclick="setText(this);return false" onmouseover="setText(this)" data-name="icon2"></a>
           </div>
         <div class="col">
-          <a class="client-icon icon3" href="#" onclick="setText(this)" onmouseover="setText(this)" data-name="icon3"></a>
+          <a class="client-icon icon3" href="#" onclick="setText(this);return false" onmouseover="setText(this)" data-name="icon3"></a>
         </div>
         <div class="col">
-          <a class="client-icon icon4" href="#" onclick="setText(this)" onmouseover="setText(this)" data-name="icon4"></a>
+          <a class="client-icon icon4" href="#" onclick="setText(this);return false" onmouseover="setText(this)" data-name="icon4"></a>
         </div>
         <div class="col">
-          <a class="client-icon icon5" href="#" onclick="setText(this)" onmouseover="setText(this)" data-name="icon5"></a>
+          <a class="client-icon icon5" href="#" onclick="setText(this);return false" onmouseover="setText(this)" data-name="icon5"></a>
         </div>
       </div>
     </div>
   </section>
+
   <!--Slideshow-->
   <div class="slideshow">
     <h1 class="master-header-50 header light">Videoreviews</h1>
     <div class="slider">
       <div class="slide-item">
-        <img class="slide-header" src="/img/TechCrunch_logo_light.svg" alt="icon" class="icon">
+        <img class="slide-header lighter" src="/img/TechCrunch_logo_light2.svg" alt="icon" class="icon">
+        <img class="slide-header darker" src="/img/TechCrunch_logo_dark2.svg" alt="icon" class="icon" style="display:none">
         <div class="slide-video"></div>
       </div>
       <div class="slide-item">
-        <img class="slide-header" src="/img/TrustedReviews_horizontal_logo_light.svg" alt="icon" class="icon">
+        <img class="slide-header" src="/img/TrustedReviews_horizontal_logo_light2.svg" alt="icon" class="icon">
         <div class="slide-video"></div>
       </div>
       <div class="slide-item">
-        <img class="slide-header" src="/img/Engadget_logo_light.svg" alt="icon" class="icon">
+        <img class="slide-header" src="/img/Engadget_logo_light2.svg" alt="icon" class="icon">
         <div class="slide-video"></div>
       </div>
       <div class="slide-item">
-        <img class="slide-header" src="/img/TheVerge_logo_light.svg" alt="icon" class="icon">
+        <img class="slide-header" src="/img/TheVerge_logo_light2.svg" alt="icon" class="icon">
         <div class="slide-video"></div>
       </div>
       <div class="slide-item">
-        <img class="slide-header" src="/img/Mashable_logo_light.svg" alt="icon" class="icon">
+        <img class="slide-header" src="/img/Mashable_logo_light2.svg" alt="icon" class="icon">
         <div class="slide-video"></div>
       </div>
     </div>
   </div>
+
   <!-- API Playground -->
   <section>
     <div class="api-playground">
       <h1 class="master-header-50 header dark">API playground</h1>
       <h2>Check if Remarkable is available in your country</h2>
-      <div class="search" style="margin:auto;max-width:350px">
-        <form autocomplete="off" method="post" action="">
-          <input type="text" placeholder="Search.." name="search" aria-label='Enter search text'>
-          <button aria-label="Submit" type="submit">Search</button>
-        </form>
-      </div>
       <div id="countries">
         <div class="spinner"><img src="/img/spinner.svg"></div>
+      </div>
+      <div class="search-result">
+        <div id="available" style="display: none">Remarkable is available in your country! Visit our webshop and buy one now!<br><span style='font-size:100px;'>&#128522;</span></div>
+        <div id="unavailable" style="display: none">Sorry, we can't deliver Remarkable to your country <br><span style='font-size:100px;'>&#128542;</span></div>
       </div>
     </div>
   </section>
@@ -144,13 +148,13 @@
         </div>
         <div class='column footer-links'>
           <ul>
-            <li>News &amp; info</li>
-            <li><a href="#">Our story</a></li>
-            <li><a href="#">FAQ & support</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Reviews</a></li>
+            <li><h3>News &amp; info</h3></li>
+            <li><a href="javascript:void(0)">Our story</a></li>
+            <li><a href="javascript:void(0)">FAQ & support</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+            <li><a href="javascript:void(0)">Careers</a></li>
+            <li><a href="javascript:void(0)">Contact</a></li>
+            <li><a href="javascript:void(0)">Reviews</a></li>
           </ul>
         </div>
       </div>
@@ -161,8 +165,6 @@
   <script src="/js/app.js"></script>
   <script>
     loadSlider()
-  </script>
-  <script>
     loadApi()
   </script>
 </body>

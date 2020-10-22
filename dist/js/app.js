@@ -1,15 +1,28 @@
+function checkAvailability(select) {
+  var availableIn = ['AF', 'NO', 'GB', 'US', 'ES', 'SE', 'FR']
+
+  if (availableIn.includes(select.value)) {
+    document.querySelector('#available').style.display = 'block'
+    document.querySelector('#unavailable').style.display = 'none'
+  } else {
+    document.querySelector('#available').style.display = 'none'
+    document.querySelector('#unavailable').style.display = 'block'
+  }
+}
+
 function renderCountries(data) {
-  var countries = document.querySelector('#countries')
+  const countries = document.querySelector('#countries')
   if (!data) {
     return countries.innerHTML = `<div class="error">Data not available.</div>`
   }
-
-  console.log(data)
-  // {name: "Afghanistan", topLevelDomain: Array(1), alpha2Code: "AF", alpha3Code: "AFG", callingCodes: Array(1), …}
-
-  countries.innerHTML = data.slice(0, 10).map(country => `<div>${country.name}</div>`).join('\n')
-
+  countries.innerHTML = `
+    <select onchange="checkAvailability(this)">
+      <option>Select your country</option>
+      ${data.map(country => `<option value="${country.alpha2Code}">${country.name}</option>`).join('\n')}
+    </select>
+  `
 }
+console.log(countries)
 
 function loadApi(fn) {
   fetch("https://rapidapi.p.rapidapi.com/all", {
@@ -29,9 +42,10 @@ function loadApi(fn) {
   })
 }
 
+// Set text clients active
 function setText(a) {
-  var name = a.getAttribute('data-name')
-  var clients = document.querySelectorAll('.clients')
+  const name = a.getAttribute('data-name')
+  const clients = document.querySelectorAll('.clients')
   clients.forEach(function(el) {
     if (el.classList.contains(name)) {
       el.style.display = 'block'
@@ -40,13 +54,14 @@ function setText(a) {
     }
   })
 
-  var icons = document.querySelectorAll('.client-icon')
+  const icons = document.querySelectorAll('.client-icon')
   icons.forEach(function(el) {
     el.classList.remove('active')
   })
   a.classList.add('active')
 }
 
+// Slideshow
 function loadSlider() {
   $('.slider').slick({
     centerMode: true,
