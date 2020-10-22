@@ -35,6 +35,20 @@ img.slide-header {
   margin-top: 1.5rem
 }
 
+.slick-center
+.slide-video,
+.slide-item
+.active {
+  background: var(--master-gray-2)
+}
+
+.slick-center
+.slide-header,
+.slide-item
+.active {
+  border-bottom: 1px solid var(--master-gray-2);
+}
+
 .slick-center{
   transform: scale(1.1);
 }
