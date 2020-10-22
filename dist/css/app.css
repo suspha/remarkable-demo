@@ -16,7 +16,7 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden
 }
 
 .remarkable-logo-dark {
@@ -101,14 +101,6 @@ footer {
   flex: 2
 }
 
-.footer-links {
-  justify-content: flex-end;
-}
-
-.footer-links a:hover {
-  border-bottom: 1px solid var(--master-cta);
-}
-
 li {
   list-style: none;
   color: var(--master-gray-7);
@@ -122,11 +114,15 @@ li a {
   transition: all .2s ease-in-out
 }
 
+.footer-links {
+  justify-content: flex-end;
+}
 
-@media only screen and (max-width: 600px) {
-  .client-reviews {
-    padding-top: 8rem;
-  }
+.footer-links a:hover {
+  border-bottom: 1px solid var(--master-cta);
+}
+
+@media only screen and (max-width: 992px) {
   .footer-wrapper .row {
     display: block;
     margin: 0 2rem;
@@ -139,6 +135,12 @@ li a {
   .footer-logo {
     margin-bottom: 1rem;
     display: inline-block
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .client-reviews {
+    padding-top: 8rem;
   }
   .top-landing {
     width: 100%;

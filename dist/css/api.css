@@ -16,9 +16,31 @@
 
 .api-playground select {
   padding: 8px 10px;
-  width: 300px;
+  width: 18.75rem;
+  max-width: 18.75rem;
   border: 2px solid var(--master-cta);
   border-radius: 20px;
+  font-size: 1rem;
+}
+
+.emoji {
+  font-size: 6.25rem;
+  margin: 1rem 0;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  80% {
+    transform: translateY(-15px);
+  }
 }
 
 @media only screen and (max-width: 600px) {

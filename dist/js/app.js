@@ -1,5 +1,5 @@
 function checkAvailability(select) {
-  var availableIn = ['AF', 'NO', 'GB', 'US', 'ES', 'SE', 'FR']
+  const availableIn = ['AF', 'NO', 'GB', 'US', 'ES', 'SE', 'FR']
 
   if (availableIn.includes(select.value)) {
     document.querySelector('#available').style.display = 'block'
