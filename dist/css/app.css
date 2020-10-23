@@ -139,20 +139,23 @@ li a {
 }
 
 @media only screen and (max-width: 600px) {
-  .client-reviews {
-    padding-top: 8rem;
-  }
   .top-landing {
     width: 100%;
     word-wrap: break-word
   }
+
   .title {
-    margin: 0 5px;
-    width: 60%;
+    margin-left: 2rem;
+    width: 50%;
   }
+
+  .title, h1.header {
+    font-size: 60px;
+  }
+
   .remarkable-brand {
     position: relative;
-    left: -8rem
+    left: -10rem
   }
 }
 
